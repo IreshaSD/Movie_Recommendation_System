@@ -1,0 +1,31 @@
+# Movie Recommendation System using Cosine Similarity
+
+## Description
+This system implements a Movie Recommendation System that utilizes cosine similarity to suggest movies similar to a user's preferences. It works by extracting text-based features like genres, keywords, overviews, taglines, cast, and directors from a dataset and computes similarity scores between movies.
+
+## Overview
+The system executes the following steps:
+- Loads movie data from a CSV file into a Pandas DataFrame, handling potential parsing errors.
+- Cleans the data, replaces null values with empty strings, and combines relevant features for recommendation.
+- Converts the text data into feature vectors using TF-IDF Vectorization.
+- Computes cosine similarity scores between movies based on their feature vectors.
+- Prompts users to input their favorite movie to generate movie recommendations.
+- Finds close matches for the user input in the movie dataset.
+- Displays the top 30 suggested movies based on their similarity scores.
+
+
+## Usage
+1. **Setup:**
+   - Ensure you have Python installed, along with the required libraries:
+     - `numpy`
+     - `pandas`
+     - `scikit-learn`
+
+2. **Execution:**
+   - Load the code in a Python environment (e.g., Jupyter Notebook, VS Code).
+   - Run the code and input your favorite movie when prompted.
+
+## Note
+- Specify the correct path to the CSV file containing movie data in the code.
+- The recommendations may vary based on the dataset and similarity calculations.
+
